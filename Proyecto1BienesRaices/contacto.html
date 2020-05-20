@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto 1 | Bienes raices</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            
+            <div class="barra">
+                <a href="/">
+                <img src="img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+            
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="icono-menu">
+                    </a>
+                </div>
+                <nav id="navegacion" class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>     
+        </div>  
+    </header>
+        
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Contacto">     
+    
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+        
+        <form action="">
+            
+            <fieldset>
+                <legend>Información personal</legend>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="email" placeholder="Teléfono">
+                <textarea placeholder="Escríbenos tu mensaje :)"></textarea> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones">
+                    <option value="" disabled selected>- Selecciona -</option>
+                    <option value="">Compra</option>
+                    <option value="">Vende</option>
+                </select>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" min="1" max="10">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>¿Cómo desea ser contáctado?</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio"name="contacto" value="telefono" id="telefono">
+                    <label for="correo">Email</label>
+                    <input type="radio"name="contacto" value="correo" id="correo"> 
+                </div>
+                <p>Si eligió teléfono, elija la fecha y hora</p>
+                <input type="date" id="fecha">
+                <input type="time" id="hora" min="9:00" max="20:00">
+                <p>El horario de atención es de 9AM - 8:00PM. Todos los dias :)</p>
+            </fieldset>
+            <input type="submit" class="boton boton-verde" value="CONTACTAR">
+        </form> 
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        <p class="copyright">Bramdon Isay Santiago Cardoso. Todos los derechos reservados. 2020 &copy;</p>    
+        </div> 
+    </footer>
+    
+</body>
+</html>
